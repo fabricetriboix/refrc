@@ -21,7 +21,7 @@ fi
 
 # Environment variables
 PAGER=less
-EDITOR=vim
+EDITOR=vi
 export PAGER EDITOR
 
 umask 022

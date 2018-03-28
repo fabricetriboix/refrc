@@ -1,32 +1,32 @@
 [user]
-	name = Fabrice Triboix
-	email = ftriboix@gmail.com
+    name = Fabrice Triboix
+    email = ftriboix@incise.co
 
 [core]
-	editor = vim
-	pager = less -x4
+    editor = vi
+    pager = less -x4
     whitespace = cr-at-eol
 
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 
 [fetch]
-	prune = true
+    prune = true
 
 [merge]
-	tool = vimdiff
-	ff = false
+    tool = vimdiff
+    ff = false
 
 [push]
-	default = simple
+    default = simple
 
 [pull]
-	rebase = false
+    rebase = false
 
 [alias]
-	co = checkout
-	ci = commit
-	br = branch
-	st = status
-	l = log --pretty=format:'%h %s' --graph --color
-	L = log --pretty=format:'%h (%d) %s' --graph --color --all
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+    l = log --pretty=format:'%h %s' --graph --color
+    L = log --pretty=format:'%h (%d) %s' --graph --color --all

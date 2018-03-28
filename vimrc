@@ -4,7 +4,6 @@ set ruler
 set formatoptions=tcroq
 set nocindent
 set autoindent
-set textwidth=72
 set hlsearch
 set noincsearch
 set hidden
@@ -21,6 +20,7 @@ set nojoinspaces
 set nofoldenable
 set tags=
 set diffopt+=context:99999
+set matchpairs+=<:>
 let c_space_errors=1
 abbreviate #d #define
 abbreviate #i #include
@@ -35,8 +35,11 @@ map + :wincmd +<CR>
 map  :diffput<CR>:diffupdate<CR>
 map  :diffupdate<CR>
 
-autocmd FileType c,cpp set cindent textwidth=80 listchars-=eol:$
-autocmd FileType make set textwidth=80 noexpandtab
-autocmd FileType python set textwidth=80 expandtab
+let mymaxline=100
+autocmd FileType c,cpp set cindent listchars-=eol:$
+autocmd FileType c,cpp let &colorcolumn=mymaxline
+autocmd FileType make set noexpandtab
+autocmd FileType make let &colorcolumn=mymaxline
+autocmd FileType python let &colorcolumn=mymaxline
 autocmd BufNewFile,BufRead SConstruct set filetype=python
 autocmd BufNewFile,BufRead SConscript set filetype=python

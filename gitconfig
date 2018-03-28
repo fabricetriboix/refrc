@@ -16,6 +16,7 @@
 [merge]
     tool = vimdiff
     ff = false
+    conflictstyle = diff3
 
 [push]
     default = simple

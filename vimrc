@@ -1,3 +1,5 @@
+let line_length=80
+set bg=dark
 syntax on
 filetype on
 set ruler
@@ -33,13 +35,11 @@ map  :nohlsearch<CR>
 map - :wincmd -<CR>
 map + :wincmd +<CR>
 map  :diffput<CR>:diffupdate<CR>
-map  :diffupdate<CR>
 
-let mymaxline=100
 autocmd FileType c,cpp set cindent listchars-=eol:$
-autocmd FileType c,cpp let &colorcolumn=mymaxline
+autocmd FileType c,cpp let &cc=line_length
 autocmd FileType make set noexpandtab
-autocmd FileType make let &colorcolumn=mymaxline
-autocmd FileType python let &colorcolumn=mymaxline
+autocmd FileType make let &cc=line_length
+autocmd FileType python let &cc=line_length
 autocmd BufNewFile,BufRead SConstruct set filetype=python
 autocmd BufNewFile,BufRead SConscript set filetype=python

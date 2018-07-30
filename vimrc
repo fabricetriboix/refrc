@@ -1,5 +1,6 @@
+set cryptmethod=blowfish2
 let line_length=80
-set bg=dark
+set background=dark
 syntax on
 filetype on
 set ruler
@@ -37,9 +38,11 @@ map + :wincmd +<CR>
 map  :diffput<CR>:diffupdate<CR>
 
 autocmd FileType c,cpp set cindent listchars-=eol:$
-autocmd FileType c,cpp let &cc=line_length
+autocmd FileType c,cpp let &colorcolumn=line_length
 autocmd FileType make set noexpandtab
-autocmd FileType make let &cc=line_length
-autocmd FileType python let &cc=line_length
+autocmd FileType make let &colorcolumn=line_length
+autocmd FileType python let &colorcolumn=line_length
+autocmd FileType markdown set tw=70
+autocmd FileType text set tw=70
 autocmd BufNewFile,BufRead SConstruct set filetype=python
 autocmd BufNewFile,BufRead SConscript set filetype=python

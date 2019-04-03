@@ -42,7 +42,8 @@ autocmd FileType c,cpp let &colorcolumn=line_length
 autocmd FileType make set noexpandtab
 autocmd FileType make let &colorcolumn=line_length
 autocmd FileType python let &colorcolumn=line_length
-autocmd FileType markdown set tw=70
-autocmd FileType text set tw=70
+autocmd FileType markdown set textwidth=70
+autocmd FileType text set textwidth=70
+autocmd FileType go set noexpandtab
 autocmd BufNewFile,BufRead SConstruct set filetype=python
 autocmd BufNewFile,BufRead SConscript set filetype=python

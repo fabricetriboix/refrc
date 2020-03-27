@@ -3,7 +3,7 @@
     email = ftriboix@incise.co
 
 [core]
-    editor = vi
+    editor = vim
     pager = less -x4
     whitespace = cr-at-eol
 
@@ -15,7 +15,7 @@
 
 [merge]
     tool = vimdiff
-    ff = false
+    ff = true
     conflictstyle = diff3
 
 [push]

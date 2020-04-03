@@ -7,4 +7,4 @@ fi
 
 # User specific environment and startup programs
 
-PATH="$PATH:$HOME/bin"
+PATH="$HOME/.local/bin:$PATH"

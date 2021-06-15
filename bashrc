@@ -6,10 +6,11 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
-alias l='\ls -F --color=auto'
-alias ll='\ls -AF --color=auto'
+alias ls='\ls -N'
+alias l='\ls -FN --color=auto'
+alias ll='\ls -NAF --color=auto'
 alias L='\ls -hAlF --color=auto'
-alias LL='\ls -lart --color=auto'
+alias LL='\ls -traNl --color=auto'
 alias u='cd .. ; pwd'
 alias mv='mv -i'
 alias cp='cp -i'
